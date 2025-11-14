@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D DNA Model</title>
+    <!-- Load Tailwind CSS for simple responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Ensure the body and HTML take up the full viewport height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling */
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 flex flex-col h-full">
+    <!-- Header/Title -->
+    <header class="p-4 bg-gray-800 shadow-xl z-20">
+        <h1 class="text-2xl font-bold text-white text-center">Interactive 3D DNA Helix</h1>
+    </header>
+
+    <!-- Main Content Area for the Spline Model -->
+    <main class="flex-grow relative">
+        <!-- The Spline iframe is contained here. We make it absolutely positioned
+             to fill the parent container completely. -->
+        <div class="absolute inset-0 p-4">
+            <iframe 
+                src='https://my.spline.design/untitled-6bZ2YSfMYzmjzyMdMuNy2F4V/' 
+                frameborder='0' 
+                width='100%' 
+                height='100%'
+                class="rounded-xl shadow-2xl"
+                title="Interactive 3D DNA Model from Spline"
+            ></iframe>
+        </div>
+
+        <!-- Info Tidbit Panel - Now smaller, professional, and positioned at the bottom right -->
+        <!-- Hidden on small screens (md:block) to prevent blocking the interactive model -->
+        <div class="absolute bottom-6 right-6 z-30 p-3 max-w-xs bg-gray-700 bg-opacity-90 rounded-xl shadow-2xl text-white backdrop-blur-sm hidden md:block">
+            <h2 class="text-base font-semibold mb-1 text-cyan-300">Molecular Data Storage</h2>
+            <p class="text-xs">
+                Deoxyribonucleic acid (DNA) is the master blueprint of life. One gram of DNA can theoretically store up to 700 terabytes of digital data, demonstrating unparalleled efficiency in information encoding.
+            </p>
+        </div>
+    </main>
+
+    <footer class="p-2 bg-gray-800 text-center text-sm text-gray-400 shadow-inner z-10">
+        Model created using Spline.
+    </footer>
+</body>
+</html>
