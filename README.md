@@ -12,3 +12,5 @@ You don't need much to run this!
 Clone or Download: Get a copy of this repository.
 Open: Simply open the index.html file in any modern web browser.
 That's it. Since the project uses an embedded iframe, there's no complex local setup or dependencies needed.
+
+Link: https://mvyne06.github.io/Spline_3D_Helix_Embed/
