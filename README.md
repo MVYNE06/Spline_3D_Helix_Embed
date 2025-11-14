@@ -3,9 +3,9 @@ A minimal, responsive web embed for showcasing an interactive 3D DNA double heli
 
 🧬 Interactive 3D DNA Helix Web Showcase
 
-This is a simple, single-file HTML project to demonstrate how easily you can embed and beautifully present an interactive 3D model (specifically a DNA double helix) on the web using the Spline platform.
+This is a simple, single file HTML project to demonstrate how easily you can embed and beautifully present an interactive 3D model (specifically a DNA double helix) on the web using the Spline platform.
 
-I built this specifically for a quick portfolio showcase on platforms like LinkedIn—it’s clean, responsive, and keeps the focus entirely on the interactive asset.
+I built this specifically for a quick portfolio showcase on platforms like LinkedIn, it’s clean, responsive, and keeps the focus entirely on the interactive asset.
 
 Getting Started
 You don't need much to run this!
