@@ -4,50 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D DNA Model</title>
-    <!-- Load Tailwind CSS for simple responsive styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Ensure the body and HTML take up the full viewport height */
-        html, body {
-            height: 100%;
+        /* Simple styling for background and layout */
+        body {
+            background-color: #1c1917; /* Very dark background */
+            color: #f3f4f6; /* Light text color */
             margin: 0;
-            overflow: hidden; /* Prevent scrolling */
-            font-family: 'Inter', sans-serif;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* Use min-height for full page */
+        }
+        h1 {
+            color: #6366f1; /* Indigo color for the main title */
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 800px;
+            flex-grow: 1;
+        }
+        iframe {
+            border: 4px solid #4f46e5;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 400px; 
+            margin-bottom: 20px;
+        }
+        .info-box {
+            background-color: #3f3f46; /* Slightly lighter box for info */
+            padding: 15px;
+            border-radius: 8px;
+            width: 100%;
+            margin-top: 10px;
+            text-align: left;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #a5b4fc;
+        }
+        .text-xs {
+            font-size: 0.75rem;
+            line-height: 1.5;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #9ca3af;
         }
     </style>
 </head>
-<body class="bg-gray-900 flex flex-col h-full">
-    <!-- Header/Title -->
-    <header class="p-4 bg-gray-800 shadow-xl z-20">
-        <h1 class="text-2xl font-bold text-white text-center">Interactive 3D DNA Helix</h1>
-    </header>
+<body>
+    <h1>Interactive 3D DNA Helix</h1>
 
-    <!-- Main Content Area for the Spline Model -->
-    <main class="flex-grow relative">
-        <!-- The Spline iframe is contained here. We make it absolutely positioned
-             to fill the parent container completely. -->
-        <div class="absolute inset-0 p-4">
-            <iframe 
-                src='https://my.spline.design/untitled-6bZ2YSfMYzmjzyMdMuNy2F4V/' 
-                frameborder='0' 
-                width='100%' 
-                height='100%'
-                class="rounded-xl shadow-2xl"
-                title="Interactive 3D DNA Model from Spline"
-            ></iframe>
-        </div>
+    <main>
+        <!-- The interactive DNA model is displayed here -->
+        <iframe 
+            src='https://my.spline.design/untitled-6bZ2YSfMYzmjzyMdMuNy2F4V/' 
+            frameborder='0' 
+            title="Interactive 3D DNA Model from Spline"
+        ></iframe>
 
-        <!-- Info Tidbit Panel - Now smaller, professional, and positioned at the bottom right -->
-        <!-- Hidden on small screens (md:block) to prevent blocking the interactive model -->
-        <div class="absolute bottom-6 right-6 z-30 p-3 max-w-xs bg-gray-700 bg-opacity-90 rounded-xl shadow-2xl text-white backdrop-blur-sm hidden md:block">
-            <h2 class="text-base font-semibold mb-1 text-cyan-300">Molecular Data Storage</h2>
+        <!-- Displaying the interesting fact in a simple box -->
+        <div class="info-box">
+            <h2>Molecular Data Storage</h2>
             <p class="text-xs">
-                Deoxyribonucleic acid (DNA) is the master blueprint of life. One gram of DNA can theoretically store up to 700 terabytes of digital data, demonstrating unparalleled efficiency in information encoding.
+                Deoxyribonucleic acid (DNA) is the master blueprint of life. One gram of DNA can theoretically store up to 700 terabytes of digital data, demonstrating unparalleled efficiency in information encoding. [Image of DNA Helix Structure]
             </p>
         </div>
     </main>
 
-    <footer class="p-2 bg-gray-800 text-center text-sm text-gray-400 shadow-inner z-10">
+    <footer>
         Model created using Spline.
     </footer>
 </body>
